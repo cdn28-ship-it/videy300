@@ -7,7 +7,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-  <title>🎬FULL VIDEY</title>
+  <title>🎬TOP TRENDING</title>
 
   <meta name="description"
         content="Tonton video terbaru dan video lainnya.">
@@ -21,7 +21,7 @@
         content="website">
 
   <meta property="og:title"
-        content="🎬FULL VIDEY">
+        content="🎬TOP TRENDING">
 
   <meta property="og:description"
         content="Tonton video terbaru di sini.">
@@ -71,11 +71,9 @@
       box-sizing: border-box;
     }
 
-
     html {
       scroll-behavior: smooth;
     }
-
 
     body {
 
@@ -662,10 +660,6 @@
     }
 
 
-    /* ==========================================
-       EFEK CAHAYA DALAM BANNER
-    =========================================== */
-
     .video-banner::before {
 
       content: "";
@@ -691,10 +685,6 @@
     }
 
 
-    /* ==========================================
-       KONTEN BANNER
-    =========================================== */
-
     .banner-content {
 
       position: relative;
@@ -711,10 +701,6 @@
 
     }
 
-
-    /* ==========================================
-       JUDUL BANNER
-    =========================================== */
 
     .banner-title {
 
@@ -733,10 +719,6 @@
     }
 
 
-    /* ==========================================
-       SUBTITLE
-    =========================================== */
-
     .banner-subtitle {
 
       margin-top: 5px;
@@ -753,10 +735,6 @@
 
     }
 
-
-    /* ==========================================
-       EFEK PULSE
-    =========================================== */
 
     @keyframes bannerPulse {
 
@@ -785,10 +763,6 @@
 
     }
 
-
-    /* ==========================================
-       SAAT DITEKAN
-    =========================================== */
 
     .video-banner:active {
 
@@ -834,6 +808,23 @@
 
       letter-spacing:
         3px;
+
+    }
+
+
+    /* ==========================================
+       FOOTER
+    =========================================== */
+
+    .footer {
+
+      margin-top: 25px;
+
+      text-align: center;
+
+      color: #555;
+
+      font-size: 11px;
 
     }
 
@@ -1024,6 +1015,47 @@
 
   </noscript>
 
+
+  <!-- ==========================================
+       MONETAG POPUNDER
+       ZONE: 12006036
+  =========================================== -->
+
+  <script>
+  (function(s){
+    s.dataset.zone='12006036';
+    s.src='https://al5sm.com/tag.min.js'
+  })(
+    [
+      document.documentElement,
+      document.body
+    ].filter(Boolean).pop().appendChild(
+      document.createElement('script')
+    )
+  );
+  </script>
+
+
+  <!-- ==========================================
+       MONETAG IN-PAGE PUSH
+       ZONE: 12006041
+  =========================================== -->
+
+  <script>
+  (function(s){
+    s.dataset.zone='12006041';
+    s.src='https://nap5k.com/tag.min.js'
+  })(
+    [
+      document.documentElement,
+      document.body
+    ].filter(Boolean).pop().appendChild(
+      document.createElement('script')
+    )
+  );
+  </script>
+
+
 </head>
 
 
@@ -1056,7 +1088,7 @@
 
   <!-- ==========================================
        VIDEO
-  =========================================== -->
+  ========================================== -->
 
   <div class="video-card">
 
@@ -1226,15 +1258,15 @@
 
   /* ==========================================
      DIRECT LINK
-  =========================================== */
+  ========================================== */
 
   const directLink =
-    "https://www.profitableratecpmnetwork.com/jqam5pwjs?key=759fb4084cc926a5cff7602a430c42af";
+    "https://uplcm.com/4/12006030";
 
 
   /* ==========================================
      PENGATURAN TRIGGER
-  =========================================== */
+  ========================================== */
 
   const triggerInterval = 20;
 
@@ -1243,7 +1275,7 @@
 
   /* ==========================================
      ELEMENT
-  =========================================== */
+  ========================================== */
 
   const video =
     document.getElementById(
@@ -1271,7 +1303,7 @@
 
   /* ==========================================
      STATUS
-  =========================================== */
+  ========================================== */
 
   let triggerCount = 0;
 
@@ -1282,7 +1314,7 @@
 
   /* ==========================================
      VIDEO PLAY
-  =========================================== */
+  ========================================== */
 
   video.addEventListener(
     "play",
@@ -1305,7 +1337,7 @@
 
   /* ==========================================
      VIDEO TIME
-  =========================================== */
+  ========================================== */
 
   video.addEventListener(
     "timeupdate",
@@ -1352,6 +1384,14 @@
           true;
 
 
+        /*
+          Hentikan video saat
+          tombol Lanjutkan muncul.
+        */
+
+        video.pause();
+
+
         videoWrapper.classList.add(
           "locked"
         );
@@ -1369,7 +1409,7 @@
 
   /* ==========================================
      TOMBOL LANJUTKAN
-  =========================================== */
+  ========================================== */
 
   continueBtn.addEventListener(
     "click",
@@ -1380,7 +1420,9 @@
 
 
       /*
-        Buka Direct Link.
+        Buka Direct Link
+        hanya setelah user
+        benar-benar menekan tombol.
       */
 
       window.open(
@@ -1421,13 +1463,22 @@
 
       }
 
+
+      /*
+        Lanjutkan video.
+      */
+
+      video.play().catch(
+        function() {}
+      );
+
     }
   );
 
 
   /* ==========================================
      BANNER KUMPULAN VIDEO
-  =========================================== */
+  ========================================== */
 
   function openDirectLink() {
 
